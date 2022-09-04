@@ -6,8 +6,12 @@ function votar() {
   let newYear = year - dataNascimento;
 
   if (newYear < 18) {
-    alert(`Não poderá votar ${nome} você menor de idade`);
+    alert(
+      ` Sua idade é: ${newYear}\n Não poderá votar ${nome}, pois é menor de idade`
+    );
   } else {
-    alert(`Você poderá votar ${nome} você maior de idade`);
+    alert(
+      ` Sua idade é: ${newYear}\n Você poderá votar ${nome}, pois é maior de idade`
+    );
   }
 }
